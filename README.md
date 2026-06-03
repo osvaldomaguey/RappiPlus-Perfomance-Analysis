@@ -17,30 +17,37 @@ Evaluar si el cambio en la User Interface del checkout tuvo impacto en la tasa d
 Comunicar los hallazgos en un dashboard en Power BI
 
 ## 🗂️ Dataset
-Fuente: novaretail_comportamiento_clientes_2024.csv
-Tamaño: 15,000 registros de clientes
+Fuente: rappiplus_orders_raw.csv
+Tamaño: 25,100 registros de clientes
+
+Fuente: rappiplus_catalog.csv
+Tamaño: 7 registros
+
+Fuente: rappiplus_marketing_spend.csv
+Tamaño: 1,620 registros
+
+Fuente: experiment_checkout_ui.csv
+Tamaño: 10,000 registros
 
 ## **Variables Analizadas**
 | Variable | Tipo | Descripción |
 |---------|-------------|-------------------|
-| ingreso_anual	| Numérica | Ingresos generados por cliente |
-| edad | Numérica |	Edad del cliente |
-| visitas_mes | Numérica	| Visitas mensuales a la plataforma |
-| compras_mes	Numérica	| Compras realizadas por mes |
-| gasto_publicidad_dirigida | Numérica | Inversión publicitaria asignada |
-| satisfaccion	| Numérica	| Calificación 1-5 |
-| miembro_premium | Binaria	| Suscripción premium (0/1) |
-| tipo_dispositivo	| Categórica	| móvil / escritorio / tablet |
-| region	Categórica | norte | / sur / oeste / este |
+| monto_total	| Numérica | Monto pagado por el pedido |
+| monto_descuento | Numérica |	Descuento aplicado al pedido |
+| gasto | Numérica	| Monto invertido en la campaña de marketing |
+| nombre_producto	| Categórica	| Nombre del producto |
+| costo_unitario | Numérica | Costo por unidad del producto |
+| canal	| Categórica	| Canal de marketing utilizado |
+| variante | Categórica	| Variante del experimento asignada al usuario (control o tratamiento) |
+| convirtio	| Binaria	| Indicador de conversión (1 = convirtió, 0 = no convirtió) |
 
 ## 🛠️ Metodología
-Técnicas de Correlación Aplicadas
-Correlación de Pearson
-Variables numéricas lineales
-Correlación Punto-Biserial
-Variables binarias vs numéricas
-V de Cramér
-Variables categóricas
+Limpieza de datos
+
+Prueba Z para proporciones
+Herramientas Utilizadas
+pandas, statsmodel.stats.proportion, Power BI
+
 Herramientas Utilizadas
 pandas, numpy, seaborn, matplotlib, scipy.stats
 
