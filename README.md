@@ -51,8 +51,7 @@ Este proyecto sigue un flujo estructurado de análisis dividido en 6 etapas prin
 | Etapa	 | Descripción | Resultado Esperado |
 |---------|-------------|-------------------|
 | 1. Exploración Inicial | Cargar y explorar el dataset | Entender estructura, columnas, tipos y métricas clave |
-| 2. Preparación de Datos	| Preparar datos y documentar supuestos |	Datos limpios y listos para análisis.
-Variables relevantes definidas y reglas documentadas |
+| 2. Preparación de Datos	| Preparar datos y documentar supuestos |	Datos limpios y listos para análisis. Variables relevantes definidas y reglas documentadas |
 | 3. Funnel de conversión | Se creó el camino de compra del usuario | Se identificó en qué parte se pierden clientes | 
 | 4. Retención por cohortes | Análisis semanal de actividad después del registro | Observar cuántos clientes siguen comprando a lo largo del tiempo |
 | 5. Test A/B de UI checkout| Calcular Prueba Z para proporciones | Rechazar o aceptar hipótesis nula |
