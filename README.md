@@ -8,12 +8,11 @@ Se realizó un análisis sobre RappiPlus, un servicio de suscripción dentro del
 ¿Es RappiPlus un modelo rentable que retiene a sus clientes?
 
 ## 📋 Objetivos
-Realizar una limpieza adecuada de los datos para garantizar la validez de los mismos en los análisis posteriores
-Así esta mejor o sigue sin sonar bien
-Identificar KPIs financieros para determinar la rentabilidad del modelo
-Elaborar un funnel que permita identificar la pérdida de clientes en el proceso de compra
-Dividir a los clientes en cohortes para identificar la retención de los mismos a lo largo del tiempo
-Evaluar si el cambio en la User Interface del checkout tuvo impacto en la tasa de conversión
+Realizar una limpieza adecuada de los datos para garantizar la validez de los mismos en los análisis posteriores.
+Identificar KPIs financieros para determinar la rentabilidad del modelo.
+Elaborar un funnel que permita identificar la pérdida de clientes en el proceso de compra.
+Dividir a los clientes en cohortes para identificar la retención de los mismos a lo largo del tiempo.
+Evaluar si el cambio en la User Interface (UI) del checkout tuvo impacto en la tasa de conversión.
 Comunicar los hallazgos en un dashboard en Power BI
 
 ## 🗂️ Dataset
@@ -42,17 +41,12 @@ Tamaño: 10,000 registros
 | convirtio	| Binaria	| Indicador de conversión (1 = convirtió, 0 = no convirtió) |
 
 ## 🛠️ Metodología
-Limpieza de datos
-
-Prueba Z para proporciones
-Herramientas Utilizadas
-pandas, statsmodel.stats.proportion, Power BI
-
-Herramientas Utilizadas
-pandas, numpy, seaborn, matplotlib, scipy.stats
+Limpieza de datos.
+Prueba Z para proporciones.
+Herramientas Utilizadas: pandas, statsmodel.stats.proportion, Power BI
 
 ## 🔄 Etapas del Análisis
-Este proyecto sigue un flujo estructurado de análisis correlacional dividido en 6 etapas principales:
+Este proyecto sigue un flujo estructurado de análisis dividido en 6 etapas principales:
 
 | Etapa	 | Descripción | Resultado Esperado |
 |---------|-------------|-------------------|
