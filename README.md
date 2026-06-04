@@ -59,27 +59,24 @@ Este proyecto sigue un flujo estructurado de análisis correlacional dividido en
 | 1. Exploración Inicial | Cargar y explorar el dataset | Entender estructura, columnas, tipos y métricas clave |
 | 2. Preparación de Datos	| Preparar datos y documentar supuestos |	Datos limpios y listos para análisis.
 Variables relevantes definidas y reglas documentadas |
-| 3. Visualización | Crear visualizaciones de relaciones iniciales |	Heatmap para patrones globales y Scatterplots para relaciones específicas |
-| 4. Análisis Correlacional | Calcular correlaciones según tipo de variable	• Pearson/Spearman (numéricas) | 
-• Punto biserial (binaria-numérica)
-• V de Cramér (categóricas) |
-| 5. Interpretación | Analizar resultados de forma responsable	| Evidencia → interpretación → implicaciones de negocio |
-| 6. Conclusiones | Documentar limitaciones y próximos pasos | Claridad sobre qué NO se puede concluir + recomendaciones futuras |
+| 3. Funnel de conversión | Se creó el camino de compra del usuario | Se identificó en qué parte se pierden clientes | 
+| 4. Retención por cohortes | Análisis semanal de actividad después del registro | Observar cuántos clientes siguen comprando a lo largo del tiempo |
+| 5. Test A/B de UI checkout| Calcular Prueba Z para proporciones | Rechazar o aceptar hipótesis nula |
+| 6. Visualización | Crear visualizaciones de KPIs |	Dashboard interactivo en Power BI |
  
 ### 🎯 Enfoque del Análisis
-Naturaleza: Correlacional y exploratorio (no causal)
-Variable objetivo: ingreso_anual (ingresos generados por cliente)
-Tipos de relaciones analizadas:
-Numéricas (lineales y monotónicas)
-Binarias vs. numéricas
-Categóricas
+Naturaleza: Descriptivo (KPIs de negocio), Exploratorio (funnel, cohortes), e Inferencial (test A/B)
+Variable objetivo: Revenue y profit, Tasa de conversión, y Tasa de retención semanal
+Tipos de relaciones analizadas: Comportamiento del usuario en el funnel, Actividad semanal por cohorte de registro, e Impacto de cambios en UI (A/B test)
 
 ### 📊 Resultado Final
-Un reporte de análisis de correlación que combina:
+Un reporte de rentabilidad y retención que combina:
 
-✅ Evidencia visual (gráficos y heatmaps)
-✅ Evidencia numérica (coeficientes de correlación)
-✅ Interpretación responsable (sin causalidad)
+✅ Evidencia visual (Dashboard interactivo en PowerBI)
+✅ Evidencia numérica (KPIs de performance)
+✅ Análisis de funnel de conversión
+✅ Retención por cohortes
+✅ Validación de hipótesis (Test A/B)
 ✅ Implicaciones de negocio accionables
 
 ## ▶ Cómo abrir el notebook en Google Colab
@@ -89,6 +86,6 @@ Haz clic en el siguiente botón:
 
 ## 📘 Cómo reproducir el análisis
 
-1. Abre `notebooks/sprint7-final-project.ipynb`
+1. Abre `notebooks/Estudiante_Proyecto_Final.ipynb`
 2. Ejecuta las celdas en orden
 3. El notebook carga automáticamente el dataset desde `/data/`
